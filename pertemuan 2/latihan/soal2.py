@@ -10,6 +10,5 @@ def bilangan_prima(n):
             primes.append(num)
     return primes
 
-# Panggil fungsi untuk n = 50
 hasil = bilangan_prima(50)
 print(hasil)
