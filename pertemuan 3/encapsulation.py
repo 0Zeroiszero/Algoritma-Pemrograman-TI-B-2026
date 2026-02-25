@@ -1,17 +1,18 @@
 class Calculator:
-  def __init__(self):
-    self.result = 0
+    def __init__(self):
+        self.result = 0
 
-  def __validate(self, num):
-    if not isinstance(num, (int, float)):
-      return False
-    return True
+    def __validate(self, num):
+        if not isinstance(num, (int, float)):
+            return False
+        return True
 
-  def add(self, num):
-    if self.__validate(num):
-      self.result += num
-    else:
-      print("Invalid number")
+    def add(self, num):
+        if self.__validate(num):
+            self.result += num
+        else:
+            print("Invalid number")
+
 
 calc = Calculator()
 calc.add(10)
@@ -21,10 +22,12 @@ calc.__validate(5)  # This would cause an error
 
 ###################################
 
+
 class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.__age = age
+    def __init__(self, name, age):
+        self.name = name
+        self.__age = age
+
 
 p1 = Person("Emil", 30)
 

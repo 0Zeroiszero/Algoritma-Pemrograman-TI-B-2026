@@ -3,5 +3,6 @@ def pangkat_rekursif(a, b):
         return 1
     return a * pangkat_rekursif(a, b - 1)
 
+
 hasil = pangkat_rekursif(2, 5)
 print(hasil)

@@ -10,5 +10,6 @@ def bilangan_prima(n):
             primes.append(num)
     return primes
 
+
 hasil = bilangan_prima(50)
 print(hasil)

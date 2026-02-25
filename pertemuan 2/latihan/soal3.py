@@ -3,5 +3,6 @@ def jumlah_digit(n):
         return n
     return n % 10 + jumlah_digit(n // 10)
 
+
 hasil = jumlah_digit(1234)
 print(hasil)

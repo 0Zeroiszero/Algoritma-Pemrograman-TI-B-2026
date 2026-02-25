@@ -1,10 +1,13 @@
 import hashlib
 
+
 class HashVerificationError(Exception):
     pass
 
+
 def error(pesan):
     print(f"[ERROR] {pesan}")
+
 
 def hitung_hash(file_path):
     try:
@@ -12,6 +15,7 @@ def hitung_hash(file_path):
             return hashlib.sha256(f.read()).hexdigest()
     except FileNotFoundError:
         raise HashVerificationError("File tidak ditemukan!")
+
 
 def main():
     try:
@@ -22,18 +26,19 @@ def main():
             raise ValueError("Format hash tidak valid!")
 
         actual_hash = hitung_hash(path)
-        
+
         if actual_hash != expected_hash:
             raise HashVerificationError("Hash tidak cocok!")
-            
+
         print("Verifikasi Berhasil: Integritas file terjaga.")
-        
+
     except HashVerificationError as e:
         error(e)
     except ValueError as e:
         error(f"Input Error: {e}")
     except Exception as e:
         error(f"Terjadi kesalahan tak terduga: {e}")
+
 
 if __name__ == "__main__":
     main()
