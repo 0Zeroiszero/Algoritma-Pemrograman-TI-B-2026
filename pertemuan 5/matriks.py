@@ -24,16 +24,8 @@ def kali_skalar(matriks, k):
     return hasil
 
 
-A = [
-    [5, 3, 1], 
-    [2, 8, 4], 
-    [6, 0, 7]
-]
-B = [
-    [1, 2, 3], 
-    [4, 5, 6], 
-    [7, 8, 9]
-]
+A = [[5, 3, 1], [2, 8, 4], [6, 0, 7]]
+B = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
 C_tambah = tambah_matriks(A, B)
 C_kurang = kurang_matriks(A, B)
